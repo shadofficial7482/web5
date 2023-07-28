@@ -21,15 +21,18 @@ body{
     border-radius: 5px;
     background-color: rgb(255, 254, 254);
     padding: 20px;
+    position: relative;
 
 }
 .top-container{
     text-align: center;
     }
+    .top-container p{
+        text-align: center;
+    }
 .side-left-container{
     grid-column: 2/4;
     grid-row: 3/5;
-    position: relative;
     border-top: 2px solid skyblue;
 
     }
@@ -47,9 +50,15 @@ body{
     flex-direction: column;
     border-top: 2px solid tomato;
     }
+    .light-img, .calculator-img{
+        width: 70px;
+        height: 70px;
+    }       
     .team-img, .search-img{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
+    }
+    .team-img, .search-img, .calculator-img, .light-img{
         position: absolute;
         bottom: 10px;
         right: 10px;
@@ -73,7 +82,8 @@ a{
     .container{
         grid-template-columns: repeat(5, auto);
         grid-template-rows: repeat(10, 100px);
-        margin-left: 35%;
+        margin-left: 32%;
+        margin-right: 48%;
     }
     .top-container{
         grid-column: 1/6;
