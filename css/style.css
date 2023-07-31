@@ -10,10 +10,10 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(9 auto);
+    grid-template-columns: repeat(5 auto);
     grid-template-rows: 100px 100px 100px 100px 100px 100px 30px  ;
     gap: 10px;
-    margin: -50px 100px;
+    margin:0 100px;
     /* text-align: start; */
 }
 .side-left-container, .side-right-container, .mid-down-container, .mid-up-container{
@@ -31,19 +31,20 @@ body{
         text-align: center;
     }
 .side-left-container{
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 3/5;
     border-top: 2px solid skyblue;
 
     }
 .side-right-container{
-    grid-column: 6/8;
+    margin-right: 150px;
+    grid-column: 4/5;
     grid-row: 3/5;
     border-top: 2px solid blue;
 
     }
 .mid-up-container{
-    grid-column: 4/6;
+    grid-column: 3/4;
     grid-row: 2/4;
     display: flex;
     position: relative;
@@ -64,7 +65,7 @@ body{
         right: 10px;
     }
 .mid-down-container{
-    grid-column: 4/6;
+    grid-column: 3/4;
     grid-row: 4/6;
     border-top: 2px solid orange;
     }
